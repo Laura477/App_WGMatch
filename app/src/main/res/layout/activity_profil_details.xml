@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfilDetailActivity">
+
+        <TextView
+            android:id="@+id/profile_title"
+            style="@style/Title"
+            android:text="@string/mein_profil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_title"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/label_ort"
+            style="@style/grayLabel"
+            android:text="@string/ort"
+            app:layout_constraintBottom_toTopOf="@+id/label_job"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/label_job"
+            style="@style/grayLabel"
+            android:text="@string/taetigkeit"
+            app:layout_constraintBottom_toTopOf="@+id/label_age"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_ort" />
+
+        <TextView
+            android:id="@+id/label_age"
+            style="@style/grayLabel"
+            android:text="@string/age"
+            app:layout_constraintBottom_toTopOf="@+id/label_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_job" />
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/generalTextfield"
+            app:layout_constraintTop_toTopOf="@+id/label_age"
+            app:layout_constraintStart_toStartOf="@+id/taetigkeit" />
+
+        <TextView
+            android:id="@+id/Ort"
+            style="@style/generalTextfield"
+            app:layout_constraintTop_toTopOf="@+id/label_ort"
+            app:layout_constraintStart_toEndOf="@+id/label_ort" />
+
+        <TextView
+            android:id="@+id/taetigkeit"
+            style="@style/generalTextfield"
+            app:layout_constraintTop_toTopOf="@+id/label_job"
+            app:layout_constraintStart_toEndOf="@+id/label_job" />
+
+        <TextView
+            android:id="@+id/gender"
+            style="@style/generalTextfield"
+            app:layout_constraintTop_toTopOf="@+id/label_gender"
+            app:layout_constraintStart_toEndOf="@+id/label_gender" />
+
+        <TextView
+            android:id="@+id/label_gender"
+            style="@style/grayLabel"
+            android:text="@string/gender"
+            app:layout_constraintBottom_toTopOf="@+id/label_about"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_age" />
+
+        <TextView
+            android:id="@+id/label_about"
+            style="@style/grayLabel"
+            android:text="@string/about"
+            app:layout_constraintBottom_toTopOf="@+id/about"
+            app:layout_constraintStart_toStartOf="@+id/about"
+            app:layout_constraintTop_toBottomOf="@+id/label_gender" />
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/generalTextfield"
+            android:layout_width="match_parent"
+            android:hint="@string/about"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/label_about"
+            app:layout_constraintTop_toTopOf="@+id/label_about" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

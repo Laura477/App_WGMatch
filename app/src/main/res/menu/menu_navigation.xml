@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_logout"
+        android:enabled="true"
+        android:icon="@drawable/logout"
+        android:title="@string/Logout"
+        app:labelVisibilityMode="labeled"
+        />
+    <item
+        android:id="@+id/menu_matches"
+        android:enabled="true"
+        android:icon="@drawable/new_message"
+        android:title="@string/Matches"
+        app:labelVisibilityMode="labeled"/>
+
+    <item
+        android:id="@+id/menu_swipe"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_view_carousel_24"
+        android:title="@string/Swiping"
+        app:labelVisibilityMode="labeled"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/Settings"
+        app:labelVisibilityMode="labeled"/>
+
+</menu>

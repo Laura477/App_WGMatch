@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "964050835197",
+    "firebase_url": "https://test---find-your-wg-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "test---find-your-wg",
+    "storage_bucket": "test---find-your-wg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964050835197:android:1d870a8201bcf5594f9094",
+        "android_client_info": {
+          "package_name": "com.example.findyourwg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964050835197-k5nk6m12773e3jdc17ca1vkifq4r3rmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMzvU4ObOt5_YH9tVz_AZJGiHAxL8WgdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964050835197-k5nk6m12773e3jdc17ca1vkifq4r3rmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

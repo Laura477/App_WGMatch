@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Find your WG</string>
+    <string name="mein_profil">Mein Profil</string>
+    <string name="profile_image">profile image</string>
+    <string name="vorname">Vorname</string>
+    <string name="nachname">Nachname</string>
+    <string name="ort">Ort</string>
+    <string name="taetigkeit">Tätigkeit</string>
+    <string name="alter">Alter</string>
+    <string name="m">m</string>
+    <string name="f">f</string>
+    <string name="d">d</string>
+    <string name="ber_mich">Über mich</string>
+    <string name="profil_aktiv">Profil aktiv</string>
+    <string name="speichern">Speichern</string>
+    <string name="wohnungsgroesse">Wohnungsgröße [qm]</string>
+    <string name="anzahlMB">Anzahl der Mitbewohner</string>
+    <string name="mietpreis">Mietpreis [€]</string>
+    <string name="filter">Filtern</string>
+    <string name="profile_info">Profilinformation</string>
+    <string name="like_button">like button</string>
+    <string name="jetzt_anmelden">Jetzt anmelden</string>
+    <string name="jetzt_registrieren">Jetzt Registrieren</string>
+    <string name="werbeslogan">Finde jetzt ganz einfach die WG die zu dir passt mit</string>
+    <string name="sucher">Sucher</string>
+    <string name="wg">WG</string>
+    <string name="Geschlecht" />
+    <string name="Logout">Logout</string>
+    <string name="Matches">Matches</string>
+    <string name="Swiping">Swiping</string>
+    <string name="Settings">Profil</string>
+    <string name="age">Alter</string>
+    <string name="gender">Geschlecht</string>
+    <string name="about">Über mich</string>
+    <string name="dislike">dislike</string>
+    <string name="emptyStackWarning">Du hast bereits alle Profile geswipt.</string>
+</resources>

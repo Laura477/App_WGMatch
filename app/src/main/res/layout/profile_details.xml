@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfilDetailActivity">
+
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="72dp"
+            android:text="@string/mein_profil"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/profile_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_title"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" /> <!-- Avatar image in preview only -->
+
+
+        <TextView
+            android:id="@+id/Ort"
+            android:layout_width="279dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:autofillHints="ort"
+            android:text="@string/ort"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/taetigkeit"
+            android:layout_width="279dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:autofillHints="@string/ort"
+            android:text="@string/taetigkeit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ort" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints="@string/taetigkeit"
+            android:text="@string/alter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taetigkeit" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="28dp"
+            android:autofillHints="@string/Geschlecht"
+            android:text="@string/Geschlecht"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taetigkeit" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="284dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints="@string/ber_mich"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+<!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/return_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about"/>
+
+-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
