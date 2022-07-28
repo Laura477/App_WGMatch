@@ -21,14 +21,15 @@ Ursprünglich Gruppenprojekt für den MATSE Android Kurs, hier Erweiterung meine
 
 ## Infos zur Datenbankanbindung/Testing
 
-Die resultierende App nutzt eine Firebase Database von Google. 
-Die App ist darauf ausgelegt, dass die Nutzer bereits in der Datenbank vorhanden sind, da keine Registrierungsmöglichkeit implementiert wurde. Daher sind in der Database 6 Dummy-Nutzer, je drei pro Kategorie (Zimmersuchende vs. WGs), angelegt worden, die nicht gelöscht werden sollten. Durch die Appnutzung kommen Unterknoten zu Connections/Matches und untergeordnete Datenbanken für die Nachrichtenverarbeitung hinzu. Die Möglichkeiten zum Testen ohne manuelles Zurücksetzen in der Datenbank sind daher begrenzt, deswegen kann die App aktuell nicht von Externen getestet werden.
-Aktuell sind alle Nutzer (beider Kategorien) gleich ausführlich aufgebaut, und die App-Oberfläche (Profildetails/Profilbearbeitung) ist von der Auswahl der Felder her darauf ausgelegt, dass WGs Mitbewohner suchen. Zukünftig könnte man hier eine Fallunterscheidung machen und entweder direkt zwei Kategorien von Nutzern in der Datenbank schaffen oder die Auswahl der angezeigten/bearbeitbaren Attribute je nach Fall variieren (z.B. Quadratmeterangabe für WGs, was für Mitbewohnerprofile keinen Sinn macht).
+Die App nutzt eine Firebase Database von Google. Die App ist darauf ausgelegt, dass die Nutzer bereits in der Datenbank vorhanden sind, da keine Registrierungsmöglichkeit implementiert wurde. Daher sind in der Database 6 Dummy-Nutzer, je drei pro Kategorie (Zimmersuchende vs. WGs), angelegt worden, die nicht gelöscht werden sollten. Durch die Appnutzung kommen Unterknoten zu Connections/Matches hinzu. Die Möglichkeiten zum Testen ohne manuelles Zurücksetzen in der Datenbank sind daher begrenzt.
+
 Testnutzer (frei erfunden): wg1@test.de bzw. sucher1@test.de, Passwort 123456 (analog wg2, wg3, sucher2, sucher3)
 
 ## ToDos
 - Registrierung und Login (Anlegen neuer Nutzer, Löschen/Zurücksetzen von Matches...)/Datenbankoperationen erweitern, ggf. probeweise auf lokal (Room) umstellen
 - Match & Chat-Funktionalität
+- stärkere Unterscheidung von Nutzern nach Profiltyp (WG vs. Mitbewohner)
 - Architektur um-/einbauen (MVVM z.B.)
 - Navigation erweitern und mit Fragmenten arbeiten
+- UI überarbeiten/vereinheitlichen mit material.io und dark/light themes
 - u.v.m.
