@@ -1,4 +1,4 @@
-# AndroidProject
+# WG App
 
 ! Work in Progress
 
